@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número Primo</title>
+</head>
+<body>
+    <center>
+        <h1>Verificador de números primos</h1>
+        <input type="number" id="numero1" name="numero1">
+        <br><br>
+        <input type="button" value="verificar" id="verificar" onclick="isPrimo()">
+        <br><br>
+        <div id="resultado"></div>
+        <script>
+            function isPrimo(){
+                var numero1 = parseInt(document.getElementById("numero1").value);
+                
+                if(numero1 === 0)
+                    document.getElementById("resultado").innerHTML = "Valor invalido!";
+                else if(numero1 == 1){
+                    document.getElementById("resultado").innerHTML = numero1 + " não é primo!";
+                }
+                else{
+                    var countDivisor = 0;
+                    for(var i=2; (i*i <= numero1) && (countDivisor === 0); i++)
+                        if(numero1 % i === 0) 
+                            countDivisor+=1;
+                    document.getElementById("resultado").innerHTML = numero1 + ((countDivisor == 0)? " é primo" : " não é primo");
+                }
+            }
+        </script>
+    </center>
+</body>
+</html>

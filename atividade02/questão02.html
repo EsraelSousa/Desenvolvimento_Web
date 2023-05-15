@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par ou Ímpa</title>
+</head>
+<body>
+    <center>
+        <h1>Insira um número e veja sua paridade</h1>
+        <input type="number" id="numero1" name="numero1">
+        <br> <br>
+        <input type="button" value="Verificar" onclick="verificarParidade()">
+        <br> <br>
+        <div id="resultado"></div>
+        <script>
+            function verificarParidade(){
+                var numero1 = parseInt(document.getElementById("numero1").value);
+                // verificar paridade
+                if(numero1 & 1)
+                    document.getElementById("resultado").innerHTML = "O número " + numero1 + " é ímpar!<br>";
+                else
+                    document.getElementById("resultado").innerHTML = "O número " + numero1 + " é par!<br>";
+                
+                // maior e menor que numero -> inteiro
+                document.getElementById("resultado").innerHTML += "Menor que " + numero1 + ": " + (numero1-1) + "<br>";
+                document.getElementById("resultado").innerHTML += "Maior que " + numero1 + ": " + (numero1+1) + "<br>";
+            }
+
+        </script>
+    </center>
+</body>
+</html>
