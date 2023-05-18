@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="questao04.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Situação Escolar</title>
+</head>
+<body>
+    <h1>Preencha as seguintes informações</h1>
+    <form action="enviar" method="post">
+        <table>
+            <tr>
+                <th>
+                    Nome:
+                </th>
+                <td>
+                    <input type="text" id="nome" name="nome">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Disciplina:
+                </th>
+                <td>
+                    <input type="text" id="disciplina" name="disciplina">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Quantidade de Faltas:
+                </th>
+                <td>
+                    <input type="number" id="quantidadeFaltas" name="quantidadeFaltas">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Carga Horária:
+                </th>
+                <td>
+                    <input type="number" id="cargaHoraria" name="cargaHoraria">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Nota 1:
+                </th>
+                <td>
+                    <input type="number" id="nota1" name="nota1">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Nota 2:
+                </th>
+                <td>
+                    <input type="number" id="nota2" name="nota2">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Nota 3:
+                </th>
+                <td>
+                    <input type="number" id="nota3" name="nota3">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br><br>
+    <input type="button" value="Verificar Situação" onclick="verificaAprovacao()">
+    <br><br>
+    <div id="resultado"></div>
+</body>
+</html>

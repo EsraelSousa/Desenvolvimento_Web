@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="questao03.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Pagamento</title>
+</head>
+<body>
+    <div id="leitura">
+        <h1>Informe o Preço Normal do produto e a condição de pagamento</h1>
+        <form>
+            <table border="1">
+                <tr>
+                    <th>
+                        Valor Normal:
+                    </th>
+                    <td>
+                        <input type="number" id="valorNormal" name="valorNormal">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Forma de Pagamento:
+                    </th>
+                    <td>
+                        <input type="radio" name="opcaoPagamento" value="A"> À vista em dinheiro, recebe 15% de desconto<br>
+                        <input type="radio" name="opcaoPagamento" value="B"> À vista no cartão de crédito, recebe 10% de desconto<br>
+                        <input type="radio" name="opcaoPagamento" value="C"> Em duas vezes, preço normal de etiqueta com juros de 10%<br>
+                        <input type="radio" name="opcaoPagamento" value="D"> Em três vezes, preço normal de etiqueta mais juros de 15%<br>
+                        <input type="radio" name="opcaoPagamento" value="E"> À vista no Pix, recebe 20% de desconto<br>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <br><br>
+    <input type="button" value="Verificar Valor Final" onclick="formasPagamento()">
+    <br><br>
+    <div id="resultado"></div>
+</body>
+</html>

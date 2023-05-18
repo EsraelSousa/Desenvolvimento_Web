@@ -1,0 +1,25 @@
+body {
+    background-color: black;
+    color: white;
+    font-size: large;
+    align-items: center;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+input[text]{
+    border-radius: 5px;
+    color: grey;
+}
+
+input[button]{
+    border-radius: 8px;
+    background-color: gray;
+    font: bold;
+}
+
+table{
+    border-radius: 5px;
+}
