@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="questão01.js"></script>
+    <link rel="stylesheet" href="questão01.css">
+    <title>Zigno Chinês </title>
+</head>
+<body>
+    <center>
+        <h1>Veja seu signo do zodíaco chinês</h1>
+        <form>
+            <table>
+                <tr>
+                    <th>
+                        Nome:
+                    </th>
+                    <td>
+                        <input type="text" name="nome" id="nome">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Ano de nascimento:
+                    </th>
+                    <td>
+                        <input type="number" name="anoNascimento" id="anoNascimento">
+                    </td>
+                </tr>
+                <tr>
+                    <th  colspan="2">
+                        <input type="reset" value="Limpar">
+                        <input type="button" value="Verificar" onclick="verificarSigno()">
+                    </th>
+                </tr>
+            </table>
+        </form>
+
+        <br><br>
+        <div id="resposta"></div>
+    </center>
+</body>
+</html>

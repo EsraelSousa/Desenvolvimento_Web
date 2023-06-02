@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="questão02.js"></script>
+	<link rel="stylesheet" type="text/css" href="questão02.css">
+	<title>Triângulo</title>
+</head>
+<body>
+	<center>
+		<form>
+			<h1>Monte um triângulo</h1>
+			<table>
+				<tr>
+					<th>Lado 1:</th><td><input type="number" name="lado1" id="lado1"></td>
+				</tr>
+
+				<tr>
+					<th>Lado 2:</th><td><input type="number" name="lado2" id="lado2"></td>
+				</tr>
+
+				<tr>
+					<th>Lado 3:</th><td><input type="number" name="lado3" id="lado3"></td>
+				</tr>
+
+				<tr>
+					<th colspan="2">
+						<br>
+						<input type="reset" value="Limpar">
+						<input type="button" value="Verificar" onclick="verificarIsTriangulo()">
+					</th>
+				</tr>
+			</table>	
+		</form>
+		<br>
+		<div id="resultado"></div>
+	</center>
+</body>
+</html>

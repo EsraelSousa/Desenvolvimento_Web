@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="questao02.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Peso Ideal</title>
+</head>
+<body>
+    <div id="leitura">
+        <h1>Veja qual o seu peso ideal</h1>
+        <form action="post" method="post">
+            <table>
+                <tr>
+                    <th>
+                        Altura:
+                    </th>
+                    <td>
+                        <input type="number" name="altura" id="altura">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Sexo:
+                    </th>
+                    <td>
+                        <select id="sexo" name="sexo">
+                            <option value="selecionar">Selecionar</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <br><br>
+    <input type="button" value="Verficar" onclick="verificarPesoIdeal()">
+    <br><br>
+    <div id="resultado"></div>
+</body>
+</html>

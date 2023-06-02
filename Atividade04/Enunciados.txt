@@ -1,0 +1,15 @@
+:::::::::::::::::::::::::::::::::::::::::::INSTRUÇÕES:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Obs1.: Compactar os arquivos da questão e fazer o upload;
+Obs2.: Nomear os arquivos com os nomes das questões, por exemplo: questao01.zip;
+Obs3.: Para todas as questões utilizar (HTML5, CSS3, JavaScript);
+Obs4.: Organize os arquivos em pastas, ou seja, uma pasta para o(s) arquivo(s) em: HTML, outra para os arquivos em CSS  e outra para os arquivos JavaScript;
+Obs5.: Todas questões devem ser resolvidas utilizando formulários, campos de textos, botões e demais componentes pertinentes.
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+#1. Construa uma função que leia 1 valor para uma variável N. A seguir, mostre a tabuada de N. Por exemplo: 1 x N = N 2 x N = 2N . . . 10 x N = 10N.  Obs.: Utilizar o laço de repetição for (inicializador;condicao; incremento) {...}
+
+#2. Elabore uma função que receba um número e diga se este número é perfeito ou não. Um número perfeito é aquele que é igual à soma de seus divisores. Ex: 1+2+3=6 , 1+2+4+7=28 , etc... Obs. Utilizar o laço de repetição While(condicao){...}.
+
+#3. Escreva uma função que leia um valor qualquer. A seguir, mostre se o valor lido é primo ou não é primo. Obs.: Usar o laço de repetição do while (...) {...}.
+
+#4. Construa uma função que leia uma quantidade de valores para X indeterminadamente (parar quando o valor digitado para x for igual a zero). Para cada valor lido, mostrar se este valor é primo ou não. Obs.: Usar qualquer laço de repetição.

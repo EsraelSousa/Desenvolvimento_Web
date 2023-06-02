@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../filesCSS/style.css">
+    <script src="../filesJavascript/VerificarNumeroPerfeito.js"></script>
+    <title>Números perfeitos</title>
+</head>
+<body>
+    <center>
+        <form action="enviar" method="post">
+            <h1>Informe um valor para ver se ele é perfeito</h1>
+            <table>
+                <tr>
+                    <th>
+                        Número
+                    </th>
+                    <td>
+                        <input type="number" name="Numero" id="Numero">
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <br>
+                        <input type="reset" value="Limpar">
+                        <input type="button" value="Verificar" onclick="isNumberPerfect()">
+                    </th>
+                </tr>
+            </table>
+        </form>
+        <br>
+        <h1>Veredito:</h1>
+        <div id="resultado"></div>
+    </center>
+</body>
+</html>
