@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Preenchimento Vetor</title>
+</head>
+<body>
+    <h1>Adicione 10 nomes de Pessoas</h1>
+    <form>
+        <script>
+            let nomes = [10];
+            for(let i=0; i<10; i++){
+                nomes[i] = prompt("Digite o nome da " + (i+1) + " pessoa");
+            }
+        </script>
+    </form>
+    <div id="resultado">
+        <script>
+            let resposta = "";
+            for(let i=0; i<10; i++){
+                resposta += nomes[i] + "<br>";
+            }
+            document.write(resposta);
+        </script>
+    </div>
+</body>
+</html>

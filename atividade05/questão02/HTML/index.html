@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Preenchimento da Matriz</title>
+  <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+</head>
+<body>
+    <h1>Preenchimento da Matriz 2x2x2 com nomes de animais</h1>
+    <form id="animal-form">
+        <script>
+            let matriz = [];
+            let i = 0;
+            while (i < 2) {
+                matriz[i] = [];
+                let j = 0;
+                while (j < 2) {
+                    matriz[i][j] = [];
+                    let k = 0;
+                    while (k < 2) {
+                        matriz[i][j][k] = prompt("Digite um nome para posição " + i + "x" + j + "x" + k);
+                        k++;
+                    }
+                    j++;
+                }
+                i++;
+            }
+        </script>
+        <!--
+            Exibir a matriz
+        -->
+        <script>
+            let resposta = "";
+            i = 0;
+            while (i < 2) {
+                let j = 0;
+                while (j < 2) {
+                    let k = 0;
+                    while (k < 2) {
+                        resposta += matriz[i][j][k] + "<br>";
+                        k++;
+                    }
+                    j++;
+                }
+                i++;
+            }
+            document.write(resposta);
+        </script>
+    </form>
+</body>
+</html>

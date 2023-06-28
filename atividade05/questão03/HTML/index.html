@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Matriz Aleatória</title>
+</head>
+<body>
+    <h1>Matriz Aleatória</h1>
+    
+    <script>
+        function gerarMatriz(linhas, colunas) {
+            var matriz = [];
+            for (var i = 0; i < linhas; i++) {
+                var linha = [];
+                for (var j = 0; j < colunas; j++) {
+                    var valor = Math.random();
+                    linha.push(valor.toFixed(4));
+                }
+                matriz.push(linha);
+            }
+            return matriz;
+        }
+
+        function encontrarExtremos(matriz) {
+            var linhas = matriz.length;
+            var colunas = matriz[0].length;
+            
+            var maiorValor = Number.NEGATIVE_INFINITY;
+            var menorValor = Number.POSITIVE_INFINITY;
+            var coordMaior = [];
+            var coordMenor = [];
+            
+            for (var i = 0; i < linhas; i++) {
+                for (var j = 0; j < colunas; j++) {
+                    var valor = matriz[i][j];
+                    
+                    if (valor > maiorValor) {
+                        maiorValor = valor;
+                        coordMaior = [i, j];
+                    }
+                    
+                    if (valor < menorValor) {
+                        menorValor = valor;
+                        coordMenor = [i, j];
+                    }
+                }
+            }
+            
+            return [coordMaior, coordMenor];
+        }
+
+        // Exemplo de uso
+        var linhas = 5;
+        var colunas = 4;
+
+        var matriz = gerarMatriz(linhas, colunas);
+        document.write("<h2>Matriz gerada:</h2>");
+        document.write("<table>");
+        for (var i = 0; i < linhas; i++) {
+            document.write("<tr>");
+            for (var j = 0; j < colunas; j++) {
+                document.write("<td>" + matriz[i][j] + "</td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+
+        var extremos = encontrarExtremos(matriz);
+        document.write("<h2>Coordenadas do maior elemento: " + extremos[0] + "</h2>");
+        document.write("<h2>Coordenadas do menor elemento: " + extremos[1] + "</h2>");
+    </script>
+</body>
+</html>

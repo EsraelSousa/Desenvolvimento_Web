@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>MMC de Valores</title>
+</head>
+<body>
+    <h1>MMC de Valores</h1>
+    
+    <script>
+        function obterValores() {
+            var vetor = [];
+            for (var i = 0; i < 15; i++) {
+                var valor = parseInt(prompt("Digite o valor " + (i + 1) + ":"));
+                vetor.push(valor);
+            }
+            return vetor;
+        }
+
+        function calcularMMC(a, b, c) {
+            function mdc(x, y) {
+                if (y === 0) {
+                    return x;
+                } else {
+                    return mdc(y, x % y);
+                }
+            }
+            
+            var mmcAB = (a * b) / mdc(a, b);
+            var mmcABC = (mmcAB * c) / mdc(mmcAB, c);
+            
+            return mmcABC;
+        }
+
+        // Exemplo de uso
+        var vetor = obterValores();
+        document.write("<h2>Vetor digitado:</h2>");
+        document.write("<p>" + vetor.join(", ") + "</p>");
+
+        var mmcVetor = [];
+        for (var i = 0; i <= 12; i += 3) {
+            var mmc = calcularMMC(vetor[i], vetor[i + 1], vetor[i + 2]);
+            mmcVetor.push(mmc);
+        }
+
+        document.write("<h2>Vetor MMC:</h2>");
+        document.write("<p>" + mmcVetor.join(", ") + "</p>");
+    </script>
+</body>
+</html>

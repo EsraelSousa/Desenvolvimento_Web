@@ -1,0 +1,20 @@
+body{
+  background-color: black;
+  color: white;
+  align-items: center;
+}
+
+input[type="button"]{
+  padding: 5px;
+  background-color: green;
+  font-size: larger;
+  color: black;
+}
+
+h1{
+  color: darkgray;
+}
+
+ol{
+  color: white;
+}
